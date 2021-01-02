@@ -1,0 +1,6 @@
+framework module Pods_App_For_InvestAZ {
+  umbrella header "Pods-App For InvestAZ-umbrella.h"
+
+  export *
+  module * { export * }
+}

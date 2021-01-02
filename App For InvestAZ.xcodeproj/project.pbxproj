@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1601837EF537D36F817F1012 /* Pods_App_For_InvestAZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF6FC9E86727D17A4C2CE50 /* Pods_App_For_InvestAZ.framework */; };
+		2228610B259B76B000026159 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228610A259B76B000026159 /* AlertService.swift */; };
+		2228610D259B771100026159 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2228610C259B771100026159 /* Alert.storyboard */; };
+		2228610F259B784300026159 /* CurrencySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2228610E259B784300026159 /* CurrencySelector.swift */; };
+		223511B92599177E00996DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511B82599177E00996DC5 /* AppDelegate.swift */; };
+		223511BB2599177E00996DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511BA2599177E00996DC5 /* SceneDelegate.swift */; };
+		223511BD2599177E00996DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511BC2599177E00996DC5 /* ViewController.swift */; };
+		223511C02599177E00996DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223511BE2599177E00996DC5 /* Main.storyboard */; };
+		223511C22599178500996DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223511C12599178500996DC5 /* Assets.xcassets */; };
+		223511C52599178500996DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223511C32599178500996DC5 /* LaunchScreen.storyboard */; };
+		223511D325991B7200996DC5 /* OnlineQuote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223511D225991B7200996DC5 /* OnlineQuote.storyboard */; };
+		223511D525991B8B00996DC5 /* QuotesConverter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223511D425991B8B00996DC5 /* QuotesConverter.storyboard */; };
+		223511D725991BB200996DC5 /* OnlineQuotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511D625991BB200996DC5 /* OnlineQuotesController.swift */; };
+		223511D925991BC600996DC5 /* QuotesConverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511D825991BC600996DC5 /* QuotesConverterController.swift */; };
+		223511DC25991D8500996DC5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223511DB25991D8500996DC5 /* UIViewController.swift */; };
+		224661D7259B3E6500FBC705 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224661D6259B3E6500FBC705 /* NetworkManager.swift */; };
+		224661DA259B4C2100FBC705 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 224661D9259B4C2100FBC705 /* Alamofire */; };
+		22686CAA259CC995002283DD /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22686CA9259CC995002283DD /* SocketIOManager.swift */; };
+		22686CAC259F4F65002283DD /* QuoteStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22686CAB259F4F65002283DD /* QuoteStruct.swift */; };
+		22686CB0259FB518002283DD /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22686CAF259FB518002283DD /* QuotesCell.swift */; };
+		22726B16259B5E6E0096A561 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 22726B15259B5E6E0096A561 /* Toast */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2228610A259B76B000026159 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		2228610C259B771100026159 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		2228610E259B784300026159 /* CurrencySelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelector.swift; sourceTree = "<group>"; };
+		223511B52599177E00996DC5 /* App For InvestAZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App For InvestAZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		223511B82599177E00996DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		223511BA2599177E00996DC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		223511BC2599177E00996DC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		223511BF2599177E00996DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		223511C12599178500996DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		223511C42599178500996DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		223511C62599178500996DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223511D225991B7200996DC5 /* OnlineQuote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlineQuote.storyboard; sourceTree = "<group>"; };
+		223511D425991B8B00996DC5 /* QuotesConverter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuotesConverter.storyboard; sourceTree = "<group>"; };
+		223511D625991BB200996DC5 /* OnlineQuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineQuotesController.swift; sourceTree = "<group>"; };
+		223511D825991BC600996DC5 /* QuotesConverterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesConverterController.swift; sourceTree = "<group>"; };
+		223511DB25991D8500996DC5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		224661D6259B3E6500FBC705 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		22686CA9259CC995002283DD /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		22686CAB259F4F65002283DD /* QuoteStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteStruct.swift; sourceTree = "<group>"; };
+		22686CAF259FB518002283DD /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
+		4DF6FC9E86727D17A4C2CE50 /* Pods_App_For_InvestAZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_For_InvestAZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4B1777E63E27C98D7F0143 /* Pods-App For InvestAZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App For InvestAZ.release.xcconfig"; path = "Target Support Files/Pods-App For InvestAZ/Pods-App For InvestAZ.release.xcconfig"; sourceTree = "<group>"; };
+		D339A01B9215698C87116507 /* Pods-App For InvestAZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App For InvestAZ.debug.xcconfig"; path = "Target Support Files/Pods-App For InvestAZ/Pods-App For InvestAZ.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		223511B22599177E00996DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22726B16259B5E6E0096A561 /* Toast in Frameworks */,
+				1601837EF537D36F817F1012 /* Pods_App_For_InvestAZ.framework in Frameworks */,
+				224661DA259B4C2100FBC705 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22286109259B769D00026159 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2228610A259B76B000026159 /* AlertService.swift */,
+				2228610E259B784300026159 /* CurrencySelector.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		223511AC2599177E00996DC5 = {
+			isa = PBXGroup;
+			children = (
+				223511B72599177E00996DC5 /* App For InvestAZ */,
+				223511B62599177E00996DC5 /* Products */,
+				4042679C86805D3508E565E2 /* Pods */,
+				D3D15939A0F80CCE8B961863 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		223511B62599177E00996DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				223511B52599177E00996DC5 /* App For InvestAZ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		223511B72599177E00996DC5 /* App For InvestAZ */ = {
+			isa = PBXGroup;
+			children = (
+				223511D02599190500996DC5 /* Resources */,
+				22286109259B769D00026159 /* Helpers */,
+				223511DA25991D4B00996DC5 /* Extensions */,
+				22686CA8259CC970002283DD /* Managers */,
+				223511CF259918F600996DC5 /* Model */,
+				223511CE259918E600996DC5 /* View */,
+				223511CD259918D900996DC5 /* Controller */,
+				223511D12599191600996DC5 /* Assets */,
+				223511C62599178500996DC5 /* Info.plist */,
+			);
+			path = "App For InvestAZ";
+			sourceTree = "<group>";
+		};
+		223511CD259918D900996DC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				223511BC2599177E00996DC5 /* ViewController.swift */,
+				223511D625991BB200996DC5 /* OnlineQuotesController.swift */,
+				223511D825991BC600996DC5 /* QuotesConverterController.swift */,
+				2241199D259FBCDC00658756 /* cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		223511CE259918E600996DC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				223511BE2599177E00996DC5 /* Main.storyboard */,
+				223511D225991B7200996DC5 /* OnlineQuote.storyboard */,
+				223511D425991B8B00996DC5 /* QuotesConverter.storyboard */,
+				2228610C259B771100026159 /* Alert.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		223511CF259918F600996DC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22686CAB259F4F65002283DD /* QuoteStruct.swift */,
+				224661D6259B3E6500FBC705 /* NetworkManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		223511D02599190500996DC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				223511B82599177E00996DC5 /* AppDelegate.swift */,
+				223511BA2599177E00996DC5 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		223511D12599191600996DC5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				223511C12599178500996DC5 /* Assets.xcassets */,
+				223511C32599178500996DC5 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		223511DA25991D4B00996DC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				223511DB25991D8500996DC5 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2241199D259FBCDC00658756 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				22686CAF259FB518002283DD /* QuotesCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		22686CA8259CC970002283DD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				22686CA9259CC995002283DD /* SocketIOManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4042679C86805D3508E565E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D339A01B9215698C87116507 /* Pods-App For InvestAZ.debug.xcconfig */,
+				AE4B1777E63E27C98D7F0143 /* Pods-App For InvestAZ.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3D15939A0F80CCE8B961863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF6FC9E86727D17A4C2CE50 /* Pods_App_For_InvestAZ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		223511B42599177E00996DC5 /* App For InvestAZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223511C92599178500996DC5 /* Build configuration list for PBXNativeTarget "App For InvestAZ" */;
+			buildPhases = (
+				EED7ABA5B688B5297460334C /* [CP] Check Pods Manifest.lock */,
+				223511B12599177E00996DC5 /* Sources */,
+				223511B22599177E00996DC5 /* Frameworks */,
+				223511B32599177E00996DC5 /* Resources */,
+				825928D88CA3EE2CCD89BD04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App For InvestAZ";
+			packageProductDependencies = (
+				224661D9259B4C2100FBC705 /* Alamofire */,
+				22726B15259B5E6E0096A561 /* Toast */,
+			);
+			productName = "App For InvestAZ";
+			productReference = 223511B52599177E00996DC5 /* App For InvestAZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		223511AD2599177E00996DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Kanan`s Macbook Pro";
+				TargetAttributes = {
+					223511B42599177E00996DC5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 223511B02599177E00996DC5 /* Build configuration list for PBXProject "App For InvestAZ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 223511AC2599177E00996DC5;
+			packageReferences = (
+				224661D8259B4C2100FBC705 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				22726B14259B5E6E0096A561 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
+			productRefGroup = 223511B62599177E00996DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				223511B42599177E00996DC5 /* App For InvestAZ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		223511B32599177E00996DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223511D525991B8B00996DC5 /* QuotesConverter.storyboard in Resources */,
+				223511D325991B7200996DC5 /* OnlineQuote.storyboard in Resources */,
+				223511C52599178500996DC5 /* LaunchScreen.storyboard in Resources */,
+				223511C22599178500996DC5 /* Assets.xcassets in Resources */,
+				223511C02599177E00996DC5 /* Main.storyboard in Resources */,
+				2228610D259B771100026159 /* Alert.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		825928D88CA3EE2CCD89BD04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App For InvestAZ/Pods-App For InvestAZ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App For InvestAZ/Pods-App For InvestAZ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App For InvestAZ/Pods-App For InvestAZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED7ABA5B688B5297460334C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App For InvestAZ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		223511B12599177E00996DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223511BD2599177E00996DC5 /* ViewController.swift in Sources */,
+				2228610F259B784300026159 /* CurrencySelector.swift in Sources */,
+				223511D725991BB200996DC5 /* OnlineQuotesController.swift in Sources */,
+				223511DC25991D8500996DC5 /* UIViewController.swift in Sources */,
+				224661D7259B3E6500FBC705 /* NetworkManager.swift in Sources */,
+				223511B92599177E00996DC5 /* AppDelegate.swift in Sources */,
+				22686CAA259CC995002283DD /* SocketIOManager.swift in Sources */,
+				223511BB2599177E00996DC5 /* SceneDelegate.swift in Sources */,
+				22686CB0259FB518002283DD /* QuotesCell.swift in Sources */,
+				2228610B259B76B000026159 /* AlertService.swift in Sources */,
+				223511D925991BC600996DC5 /* QuotesConverterController.swift in Sources */,
+				22686CAC259F4F65002283DD /* QuoteStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		223511BE2599177E00996DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223511BF2599177E00996DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		223511C32599178500996DC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223511C42599178500996DC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		223511C72599178500996DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		223511C82599178500996DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		223511CA2599178500996DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D339A01B9215698C87116507 /* Pods-App For InvestAZ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM35R5MWT2;
+				INFOPLIST_FILE = "App For InvestAZ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.incode.App-For-InvestAZ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		223511CB2599178500996DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4B1777E63E27C98D7F0143 /* Pods-App For InvestAZ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NM35R5MWT2;
+				INFOPLIST_FILE = "App For InvestAZ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.incode.App-For-InvestAZ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		223511B02599177E00996DC5 /* Build configuration list for PBXProject "App For InvestAZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223511C72599178500996DC5 /* Debug */,
+				223511C82599178500996DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223511C92599178500996DC5 /* Build configuration list for PBXNativeTarget "App For InvestAZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223511CA2599178500996DC5 /* Debug */,
+				223511CB2599178500996DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		224661D8259B4C2100FBC705 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		22726B14259B5E6E0096A561 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		224661D9259B4C2100FBC705 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 224661D8259B4C2100FBC705 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		22726B15259B5E6E0096A561 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22726B14259B5E6E0096A561 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 223511AD2599177E00996DC5 /* Project object */;
+}
